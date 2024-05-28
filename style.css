@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url(avatar2.jpg);
+    background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  /* font-optical-sizing: auto; */
+  font-weight: 400;
+  font-style: normal;
+   max-width: 700px; 
+   margin: auto;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 45rem;
+    justify-content: center;
+     margin: 10px;
+    
+}
+.formulaire{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 15rem;
+     margin: 20px; 
+    
+}
+.nom{
+     display:flex; 
+     gap: 1rem;
+}
+#name{
+    width: 6.8rem;
+    line-height: 30px;
+}
+input{
+    line-height: 30px;
+    border: 0px;
+    border-bottom: 1px solid black;
+}
+select{
+    border: 0px;
+    border-bottom: 1px solid black;
+}
+svg{
+    position: relative;
+    left: 14rem;
+    bottom: 1.5rem;
+}
+button{
+    width: 5rem;
+    align-self: center;
+    padding: 5px;
+    background-color: black;
+    color: #fff;
+}
+fieldset{
+    align-items: center;
+    background-color: #fff;
+    border: 0px;
+    max-width: 40rem;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+h1{
+    text-align: center;
+}
+img{
+    width: 18rem;
+}
+@media screen and (max-width:900px){
+    img{
+        width: 100%;
+    }
+    .formulaire{
+        width: 100%;
+    }
+  svg{
+    /* width: 100%; */
+     display: none;
+  }
+  .nom input[type="text"]{
+    flex-basis: 50%; 
+   
+} 
+
+/* input[type='text']{
+    width: 100%;
+} */
+
+}
+@media screen and (max-width:1200px){
+    img{
+        width: 100%;
+    }
+    .formulaire{
+        width: 100%;
+    }
+  svg{
+    width: 100%;
+    
+  }
+  .nom input[type="text"]{
+    flex-basis: 50%; 
+   
+} 
+
+#name{
+    
+}
+}
